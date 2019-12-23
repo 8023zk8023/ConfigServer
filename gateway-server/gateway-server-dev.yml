@@ -17,7 +17,7 @@ spring:
             - Path=/activity/**
           filters:
             - StripPrefix=1
-
+domain: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 eureka:
   instance:
     lease-renewal-interval-in-seconds: 5
