@@ -6,10 +6,10 @@ spring:
           # 表明gateway开启服务注册和发现的功能
           enabled: true
       routes:
-        - id: activity-route
-          uri: lb://activity
+        - id: config-client
+          uri: lb://config-client
           predicates:
-            - Path=/activity/**
+            - Path=/client/**
           filters:
             - StripPrefix=1
 domain: config-server
