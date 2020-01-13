@@ -23,5 +23,5 @@ spring:
           predicates:
             - Path=/auth/**
           filters:
-            - StripPrefix=2
+            - StripPrefix=1
 domain: config-server
