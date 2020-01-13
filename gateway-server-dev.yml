@@ -12,4 +12,16 @@ spring:
             - Path=/client/**
           filters:
             - StripPrefix=1
+        - id: user-server
+          uri: lb://user-server
+          predicates:
+            - Path=/user/**
+          filters:
+            - StripPrefix=1
+        - id: auth-server
+          uri: lb://auth-server
+          predicates:
+            - Path=/auth/**
+          filters:
+            - StripPrefix=1
 domain: config-server
